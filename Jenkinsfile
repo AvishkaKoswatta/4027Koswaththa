@@ -20,7 +20,7 @@ pipeline {
             steps {
                 // Run Docker container
                 script {
-                    docker.image('devops').run("-p 8080:80", "--name devops_container")
+                    docker.image('devops').run("-p 8081:80", "--name devops_container")
                 }
             }
         }
