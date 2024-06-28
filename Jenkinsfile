@@ -12,7 +12,7 @@ pipeline {
             steps {
                 // Build Docker image
                 script {
-                    docker.build('devops')
+                    docker.build('devops_laptop')
                 }
             }
         }
@@ -20,7 +20,7 @@ pipeline {
             steps {
                 // Run Docker container
                 script {
-                    docker.image('devops').run("-p 8081:80", "--name devops_container")
+                    docker.image('devops_laptop').run("-p 8082:80", "--name devops_container_laptop")
                 }
             }
         }
