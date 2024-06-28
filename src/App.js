@@ -14,7 +14,7 @@ function App() {
             <input type="text" id="username" />
           </div>
           <div>
-            <label htmlFor="password">Password: </label>
+            <label htmlFor="password">Passwor d- </label>
             <input type="password" id="password" />
           </div>
           <button type="submit">Login</button>
